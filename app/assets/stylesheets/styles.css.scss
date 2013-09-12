@@ -1,17 +1,11 @@
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
-$btnPrimaryBackground: purple;
-
-@import 'bootstrap';
+@import "bootswatch/flatly/variables";
+@import "bootstrap";
 body{
     padding-top: 60px;
 }
 
-@import 'bootstrap-responsive';
-
-.navbar-inner{
-    @include box-shadow(none !important);
-}
+@import "bootstrap-responsive";
+@import "bootswatch/flatly/bootswatch";
 
 .footer{
     margin-top: 50px;
