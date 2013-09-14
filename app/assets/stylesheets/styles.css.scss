@@ -7,10 +7,12 @@ body{
 @import "bootstrap-responsive";
 @import "bootswatch/flatly/bootswatch";
 
-.footer{
-    margin-top: 50px;
-    color: $grayLight;
-    a{
-        color: $gray;
-    }
+.footer { 
+    margin-top: 50px; color: $grayLight; position: absolute; bottom: 0;
+    a {color: $gray;}
 }
+
+/* required for Masonry */
+.box {margin: 5px; padding: 5px; font-size: 11px; line-height: 1.4em; float: left; -webkit-border-radius: 4px; border-radius: 4px; -moz-border-radius: 4px; box-shadow: 0px 0px 2px #aaa; width: 214px;}
+.box img {display: block; width: 100%}
+.description {margin: 5px 0 5px 0}
