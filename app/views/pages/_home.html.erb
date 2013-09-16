@@ -1,4 +1,5 @@
-<div class="center hero-unit">
+<% unless user_signed_in? %>
+	<div class="center hero-unit">
 			<h1>Welcome to Shamalama</h1>
 
 			<p>
@@ -8,3 +9,4 @@
 			<p><%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %></p>
 
 		</div><!-- /hero-unit -->
+<% end %>

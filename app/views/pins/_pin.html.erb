@@ -1,10 +1,17 @@
 <div class="box">
-	<%= link_to (image_tag pin.image(:medium)), pin %>
+	<div class="img-wrap">
+		<%= link_to (image_tag pin.image(:medium)), pin %>
+	</div>
 	<p class="description">
 		<%= pin.description %>
 	</p>
+
+	<span class="pull-left">Added by <%= pin.user.name %></span>
 	  <% if current_user == pin.user %>
-		<%= link_to 'Edit', edit_pin_path(pin) %>
-		<%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<div id="action-links">
+			<%= link_to 'Edit', edit_pin_path(pin) %>
+			<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</div>
 	  <% end %>
- </div>
+ 
+ </div><!-- /box -->
