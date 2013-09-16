@@ -8,7 +8,7 @@ body{
 @import "bootswatch/flatly/bootswatch";
 
 .footer { 
-    margin-top: 50px; color: $grayLight; position: fixed; bottom: 0;
+    margin-top: 50px; color: $grayLight;;
     a {color: $gray;}
 }
 
@@ -19,4 +19,7 @@ body{
 .description {margin: 5px 0 5px 0}
 #action-links {float: right;}
 #action-links a {margin-left: 5px}
+.user-name {font-weight: bold;}
+
+.pagination ul {margin-top: 20px}
 

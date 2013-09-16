@@ -6,7 +6,7 @@
 		<%= pin.description %>
 	</p>
 
-	<span class="pull-left">Added by <%= pin.user.name %></span>
+	<span class="pull-left">Added by <span class="user-name"><%= pin.user.name %></span></span>
 	  <% if current_user == pin.user %>
 		<div id="action-links">
 			<%= link_to 'Edit', edit_pin_path(pin) %>
